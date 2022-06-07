@@ -21,7 +21,7 @@ One top of that, we randomly selected samples from different families and ancest
 A [toy dataset](datasets/toy/samples.ped) of 6 samples ended up containing exomes for individuals from 4 families of 3 ancestries, with 50% females and 50% males. To generate it:
 
 ```bash
-snakemake -j1 -p --config n=6 input_type=exome_bam dataset_name=toy
+snakemake -s prep_warp_inputs.smk -j1 -p --config n=6 input_type=exome_bam dataset_name=toy
 ```
 
 A larger [50-sample dataset](datasets/50genomes/samples.ped) ended up containing genomes from 48 families of 18 ancestries with a roughly equal male/female distribution. To generate it:
