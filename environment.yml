@@ -1,10 +1,12 @@
 name: fewgenomes
-
+channels:
+  - conda-forge
 dependencies:
-  - analysis-runner
-  - snakemake-minimal
-  - pandas
   - google-cloud-sdk
   - google-cloud-storage
   - progressbar2
-  - hail
+  - pip:
+    - snakemake-minimal
+    - pandas
+    - analysis-runner
+    - hail
